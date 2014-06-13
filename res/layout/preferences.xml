@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="check"
+        android:summary="@string/enabled_summary"
+        android:title="@string/enabled" />
+    
+     <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="warning"
+        android:summary="@string/warning_desc"
+        android:title="@string/warning_title" />
+
+    <EditTextPreference
+        android:inputType="number"
+        android:defaultValue="@string/default_value"
+        android:dialogMessage="@string/default_text"
+        android:dialogTitle="@string/sensitivity"
+        android:key="sensitivity"
+        android:summary="@string/sensitivity_summary"
+        android:title="@string/sensitivity"
+      
+       />
+    <Preference
+    android:key="@string/graph"
+    android:title="@string/data_graph"
+    android:summary="@string/data_graph_desc">
+  <intent
+        android:action="android.intent.action.MAIN"
+        android:targetPackage="com.dan.hanson.hangupalready"
+        android:targetClass="com.dan.hanson.hangupalready.GraphActivity"
+        />
+    
+
+</Preference>
+    
+    
+   
+
+</PreferenceScreen>
